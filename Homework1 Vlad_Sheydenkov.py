@@ -1,12 +1,12 @@
-import glob
-import sys
-import re
-from time import localtime
-from itertools import groupby
 import csv
+import glob
 import itertools
-import xml.etree.ElementTree as etree
 import random
+import re
+import sys
+from time import localtime
+import xml.etree.ElementTree as etree
+
 
 # 1 1 line: Output
 print('Start program #1')
@@ -61,7 +61,10 @@ grocery_bill = sum(prices[fruit] * my_purchase[fruit]
                    for fruit in my_purchase)
 print('I owe the grocer $%.2f' % grocery_bill)
 
-# 8 This program adds up integers that have been passed as arguments in the command line
+'''8 This program adds up integers that have been passed 
+
+as arguments in the command line
+'''
 print('Start program #8')
 
 try:
@@ -148,7 +151,9 @@ print('Start program #14')
 
 def median(pool):
     """Statistical median to demonstrate doctest.
+
     >>> median([2, 9, 9, 7, 9, 2, 4, 5, 8])
+
     6 #change to 7 in order to pass the test
     """
     copy = sorted(pool)
@@ -174,7 +179,7 @@ This is the second.
 '''.splitlines()
 # Use itertools.groupby and bool to return groups of
 # consecutive lines that either have content or don't.
-for has_chars, frags in groupby(lines, bool):
+for has_chars, frags in itertools.groupby(lines, bool):
     if has_chars:
         print(' '.join(frags))
 
@@ -349,6 +354,7 @@ while guesses_made < 6:
         break
 
 if guess == number:
-    print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+    print('Good job, {0}! You guessed my number \n'
+          'in {1} guesses!'.format(name, guesses_made))
 else:
     print('Nope. The number I was thinking of was {0}'.format(number))
