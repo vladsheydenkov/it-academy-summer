@@ -19,4 +19,5 @@ def sub_string(str_):
 
 if __name__ == '__main__':
     # здесь можно сделать ввод из консоли и проверить работу функции
+    str = ''
     print(sub_string(str_))
