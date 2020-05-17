@@ -1,5 +1,6 @@
-import unittest
 import ddt
+import unittest
+
 
 from src.homework2.task1 import total_sum
 
