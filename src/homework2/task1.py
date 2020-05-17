@@ -11,7 +11,7 @@ def total_sum(m, n, s):
     :param n: копейки
     :param s: количество товара
     :return: строка. общая цена в рублях и копейках. формат:
-        'x roubles y kopecks'
+        'x rubles y kopecks'
     """
     # write your code here
     return ''  # write return value here
