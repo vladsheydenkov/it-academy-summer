@@ -14,7 +14,9 @@ def total_sum(m, n, s):
         'x rubles y kopecks'
     """
     # write your code here
-    return ''  # write return value here
+    n = n / 100
+    sum = (m + n) * s
+    return sum  # write return value here
 
 
 if __name__ == '__main__':
