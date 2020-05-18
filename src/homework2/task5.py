@@ -12,11 +12,11 @@ def fibonacci(n):
 
     # write your code here
     fibonachi_list = [1, 2]
-    for i in range(1, n-1):
+    for i in range(1, n - 1):
         x = (fibonachi_list[-2] + fibonachi_list[-1])
         fibonachi_list.append(x)
 
-    return fibonachi_list[n-1]  # write return value here
+    return fibonachi_list[n - 1]  # write return value here
 
 
 if __name__ == '__main__':
