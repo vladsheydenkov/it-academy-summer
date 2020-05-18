@@ -14,7 +14,12 @@ def sub_string(str_):
     """
 
     # write your code here
-    return ''  # write return value here
+    new_str_ = ""
+    marks = ['.', ',', '!', '?', '-', ':', '(', ')', '"', '\'', ';', ' ']
+    for symbol in str_:
+        if symbol not in marks and symbol not in new_str_:
+            new_str_ += symbol
+    return new_str_ # write return value here
 
 
 if __name__ == '__main__':
