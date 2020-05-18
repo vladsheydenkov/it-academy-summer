@@ -11,8 +11,8 @@ def fibonacci(n):
     """
 
     # write your code here
-    fibonachi_list = [1,2]
-    for i in range (1, n-1):
+    fibonachi_list = [1, 2]
+    for i in range(1, n-1):
         x = (fibonachi_list[-2] + fibonachi_list[-1])
         fibonachi_list.append(x)
 
