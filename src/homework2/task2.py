@@ -14,7 +14,20 @@ def longest_word(str_):
     """
 
     # write your code here
-    return ''  # write return value here
+    new_str_ = ""
+    punctuation_marks = ['.', ',', '!', '?', '-', ':', '(', ')', '"', '\'', ';']
+    for symbol in str_:
+        if symbol not in punctuation_marks:
+            new_str_ += symbol
+
+    new_str_ = new_str_.split()
+    longest_word = new_str_[0]
+    for string in new_str_:
+        if len(string) > len(longest_word):
+            longest_word = string
+    print(longest_word)
+            
+    return longest_word # write return value here
 
 
 if __name__ == '__main__':
