@@ -17,12 +17,12 @@ print(sum(y))
 
 # end
 
-"""Each new term in the Fibonacci sequence is generated 
-by adding the previous two terms. 
+"""Each new term in the Fibonacci sequence is generated
+by adding the previous two terms.
 By starting with 1 and 2, the first 10 terms will be:
 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
-By considering the terms in the Fibonacci sequence 
-whose values do not exceed four million, 
+By considering the terms in the Fibonacci sequence
+whose values do not exceed four million,
 find the sum of the even-valued terms."""
 
 # var 1
@@ -59,6 +59,3 @@ while m[-1] < 4000000:
     m.append(m[-2] + m[-1])
 b = filter(lambda a: not a % 2, m)
 print(sum(b))
-
-
-
