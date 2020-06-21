@@ -38,17 +38,16 @@ Redundant files (configs, etc. ) are put to .gitignore
 8. Failed CI checks
 9. Missed tasks
 10. Task 1. Can we use % operator instead of while? 
-11. Task1. This task has one-line solution. It looks too complex.
-12. Task 3. Punctuation marks are: `,?.;:{)}['"` and some more.
-13. Task 4. Redundant check for !=''.
-14. Task 5. Why do we need to copy this string. More of that why do we do it 
+11. Task 1. This task has one-line solution. It looks too complex.
+12. Task 2. Punctuation marks are: `,?.;:{)}['"` and some more.
+13. Task 3. Redundant check for !=''.
+14. Task 4. Why do we need to copy this string. More of that why do we do it 
 with symbols iteration.
-15. Task 5. We can just use `if 'a' < char < 'z'` or `char.islower()` function.
+15. Task 4. We can just use `if 'a' < char < 'z'` or `char.islower()` function.
 same for upper chars.
-16. Task 6. There is one-line solution w/o temporary variable for creating next
+16. Task 5. There is one-line solution w/o temporary variable for creating next
 fibonacci number.
-17. Task 7. there is more simple solution (w/o number of digits count).
-You can use knowledge after Numeral system lesson.
+17. Task 6. there is more simple solution (w/o number of digits count).
 18. You can add some advanced tasks to improve your scores (take a look at
  evaluation section
  
