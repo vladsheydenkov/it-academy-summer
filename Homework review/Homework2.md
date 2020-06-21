@@ -27,29 +27,30 @@ Redundant files (configs, etc. ) are put to .gitignore
 
 
 ### Review notes:
-1. Task 1. Can we use % operator instead of while? 
-2. Task 3. Punctuation marks are: `,?.;:{)}['"` and some more.
-3. Task 4. Redundant check for !=''.
-4. You can add some advanced tasks to improve your scores (take a look at
- evaluation section)
-5. Task 5. Why do we need to copy this string. More of that why do we do it 
+####Styling
+1. Failed checklist item (PR name)
+2. Missed tasks descriptions.
+3. Other HW code in PR
+4. Please don't remove `__init__.py` file.
+5. Please don't put your code to `__init__.py` file.
+6. Redundant comments in task 
+7. Please divide tasks with two blank lines if you're doing them in one file
+8. Failed CI checks
+9. Missed tasks
+10. Task 1. Can we use % operator instead of while? 
+11. Task1. This task has one-line solution. It looks too complex.
+12. Task 3. Punctuation marks are: `,?.;:{)}['"` and some more.
+13. Task 4. Redundant check for !=''.
+14. Task 5. Why do we need to copy this string. More of that why do we do it 
 with symbols iteration.
-6. Redundant commented stings in tasks (prints, trivial descriptions etc).
-7. Failed checklist item (PR name)
-8. Missed tasks descriptions.
-9. You can add some novice tasks to improve your scores (take a look at 
-evaluation section)
-10. Please divide tasks with two blank lines if you're doing them in one file
-11. Failed CI checks
-12. Missed tasks
-13. Please don't remove `__init__.py` file.
-14. Redundant comments in task (not only where I mentioned it in PR comments)
 15. Task 5. We can just use `if 'a' < char < 'z'` or `char.islower()` function.
 same for upper chars.
-16. Please don't put your code to `__init__.py` file.
-17. Task 6. There is one-line solution w/o temporary variable for creating next
+16. Task 6. There is one-line solution w/o temporary variable for creating next
 fibonacci number.
-18. Task 7. there is more simple solution (w/o number of digits count).
+17. Task 7. there is more simple solution (w/o number of digits count).
 You can use knowledge after Numeral system lesson.
-19. Other HW code in PR
-20. Task 1. This task has one-line solution. It looks too complex.
+18. You can add some advanced tasks to improve your scores (take a look at
+ evaluation section
+ 
+19. You can add some novice tasks to improve your scores (take a look at 
+evaluation section)
