@@ -12,10 +12,12 @@ import xml.etree.ElementTree as etree
 print('Start program #1')
 print('Hello, world')
 
+
 # 2 2 lines: Input, assignment
 print('Start program #2')
 name = input('What is your name?\n')
 print('Hi, %s.' % name)
+
 
 # 3 3 lines: For loop, built-in enumerate function, new style formatting
 print('Start program #3')
@@ -23,12 +25,14 @@ friends = ['john', 'pat', 'gary', 'michael']
 for i, name in enumerate(friends):
     print("iteration {iteration} is {name}".format(iteration=i, name=name))
 
+
 # 4 4 lines: Fibonacci, tuple assignment
 print('Start program #4')
 parents, babies = (1, 1)
 while babies < 100:
     print('This generation has {0} babies'.format(babies))
     parents, babies = (babies, parents + babies)
+
 
 # 5 5 lines: Functions
 print('Start program #5')
@@ -42,6 +46,7 @@ greet('Jack')
 greet('Jill')
 greet('Bob')
 
+
 # 6 6 lines: Import, regular expressions
 print('Start program #6')
 
@@ -50,6 +55,7 @@ for test_string in ['555-1212', 'ILL-EGAL']:
         print(test_string, 'is a valid US local phone number')
     else:
         print(test_string, 'rejected')
+
 
 # 7 7 lines: Dictionaries, generator expressions
 print('Start program #7')
@@ -73,6 +79,7 @@ try:
 except ValueError:
     print('Please supply integer arguments')
 
+
 # 9 9 lines: Opening files
 print('Start program #9')
 # indent your Python code to put into an email
@@ -88,6 +95,7 @@ for file_name in sorted(python_files):
             print('    ' + line.rstrip())
 
     print()
+
 
 # 10 10 lines: Time, conditionals, from..import, for..else
 print('Start program #10')
@@ -108,6 +116,7 @@ for activity_time in sorted(activities.keys()):
 else:
     print('Unknown, AFK or sleeping!')
 
+
 # 11 11 lines: Triple-quoted strings, while loop
 print('Start program #11')
 REFRAIN = '''
@@ -121,6 +130,7 @@ while bottles_of_beer > 1:
     print(REFRAIN % (bottles_of_beer, bottles_of_beer,
                      bottles_of_beer - 1))
     bottles_of_beer -= 1
+
 
 # 12 12 lines: Classes
 print('Start program #12')
@@ -169,6 +179,7 @@ if __name__ == '__main__':
 
     doctest.testmod()
 
+
 # 15 15 lines: itertools
 print('Start program #15')
 lines = '''
@@ -186,6 +197,7 @@ for has_chars, frags in itertools.groupby(lines, bool):
 # PRINTS:
 # This is the first paragraph.
 # This is the second.
+
 
 # 16 16 lines: csv module, tuple unpacking, cmp() built-in
 print('Start program #16')
@@ -213,6 +225,7 @@ with open('stocks.csv', 'r') as stocksFile:
     for ticker, name, price, change, pct in stocks:
         status = status_labels[cmp(float(change), 0.0)]
         print('%s is %s (%.2f)' % (name, status, float(pct)))
+
 
 # 17 18 lines: 8-Queens Problem (recursion)
 print('Start program #17')
@@ -245,6 +258,7 @@ def solve(n):
 for answer in solve(BOARD_SIZE):
     print(answer)
 
+
 # 18 20 lines: Prime numbers sieve w/fancy generators
 print('Start program #18')
 
@@ -269,6 +283,7 @@ for p in iter_primes():
         break
     print(p)
 
+
 # 19 21 lines: XML/HTML parsing
 print('Start program #19')
 dinner_recipe = '''<html><body><table>
@@ -291,6 +306,7 @@ for ingredient in tree.getiterator('tr'):
     amt, unit, item = ingredient
     if item.tag == "td" and item.text not in pantry:
         print("%s: %s %s" % (item.text, amt.text, unit.text))
+
 
 # 20 28 lines: 8-Queens Problem (define your own exceptions)
 print('Start program #20')
@@ -326,6 +342,7 @@ def add_queen(queens):
 queens = add_queen([])
 print(queens)
 print("\n".join(". " * q + "Q " + ". " * (BOARD_SIZE - q - 1) for q in queens))
+
 
 # 21 33 lines: "Guess the Number" Game
 print('Start program #21')
