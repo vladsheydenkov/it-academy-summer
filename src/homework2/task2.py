@@ -10,22 +10,17 @@ def longest_word(str_):
     :param str_: входная строка
     :return: строка. Самое длинное слово в предложении (в случае если их
         несколько, самое левое в строке).
-        в случае если
     """
 
     # write your code here
-    new_str_ = ""
-    marks = ['.', ',', '!', '?', '-', ':', '(', ')', '"', '\'', ';']
-    for symbol in str_:
-        if symbol not in marks:
-            new_str_ += symbol
-
-    new_str_ = new_str_.split()
-    longest_word = new_str_[0]
-    for string in new_str_:
+    import string
+    for mark in string.punctuation:
+        str_ = str_.replace(mark, "")
+    str_ = str_.split()
+    longest_word = str_[0]
+    for string in str_:
         if len(string) > len(longest_word):
             longest_word = string
-    print(longest_word)
     return longest_word
 
 
