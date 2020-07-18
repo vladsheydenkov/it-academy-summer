@@ -1,3 +1,4 @@
+import string
 """Найти самое длинное слово в введенном предложении. В случае если их
     несколько, самое левое в строке Учтите что в предложении есть знаки
     препинания.
@@ -13,14 +14,13 @@ def longest_word(str_):
     """
 
     # write your code here
-    import string
     for mark in string.punctuation:
         str_ = str_.replace(mark, "")
     str_ = str_.split()
     longest_word = str_[0]
-    for string in str_:
-        if len(string) > len(longest_word):
-            longest_word = string
+    for word in str_:
+        if len(word) > len(longest_word):
+            longest_word = word
     return longest_word
 
 
