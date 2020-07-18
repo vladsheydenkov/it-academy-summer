@@ -23,4 +23,3 @@ if __name__ == '__main__':
     m, n, s = '', '', ''
     print(total_sum(m, n, s))
 
-
