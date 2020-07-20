@@ -11,15 +11,13 @@ def fibonacci(n):
     """
 
     # write your code here
+    fib1 = fib2 = 1
+    n = n - 2
+    while n > 0:
+        fib1, fib2 = fib2, fib1 + fib2
+        n -= 1
 
-    if n in (1, 2):
-        return 1
-    else:
-        if not cache.get(n - 1):
-            cache[n - 1] = fibonacci(n - 1)
-        if not cache.get(n - 2):
-            cache[n - 2] = fibonacci(n - 2)
-    return cache.get(n - 1) + cache.get(n - 2)
+    return fib2
 
 
 if __name__ == '__main__':
