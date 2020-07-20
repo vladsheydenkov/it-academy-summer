@@ -2,7 +2,7 @@
     циклические операторы и условные операторы. n - вводится.
 """
 
-
+cache = {}
 def fibonacci(n):
     """Поиск числа фибоначчи.
 
@@ -11,15 +11,25 @@ def fibonacci(n):
     """
 
     # write your code here
-    fibonachi_list = [1, 2]
-    for i in range(1, n - 1):
-        x = (fibonachi_list[-2] + fibonachi_list[-1])
-        fibonachi_list.append(x)
 
-    return fibonachi_list[n - 1]  # write return value here
+    if n in (1, 2):
+        return 1
+    else:
+        if not cache.get(n - 1):
+            cache[n - 1] = fibonacci(n - 1)
+        if not cache.get(n - 2):
+            cache[n - 2] = fibonacci(n - 2)
+    return cache.get(n-1) + cache.get(n-2)
 
 
+print(fibonacci(1000))
+
+
+
+
+"""
 if __name__ == '__main__':
     # здесь можно сделать ввод из консоли и проверить работу функции
     n = 0
     print(fibonacci(n))
+"""
