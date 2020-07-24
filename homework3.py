@@ -24,12 +24,13 @@ for i in range(1, 101):
 # Используйте генератор списков чтобы получить следующий
 # ['1a', '2a', '3a', '4a'].
 # Одной строкой удалите элемент  '2a' из прошлого списка и напечатайте его.
-x = ['a', 'b']
-z = ['b', 'c', 'd']
-y = [i + k for i in x for k in z]
-print(y)
-print(y[::2])
-print([str(i) + 'a' for i in range(1, 5)])
+str_ = 'abcd'
+list1 = [fir_l + sec_l for fir_l in str_[:2] for sec_l in str_[1:]]
+print(list1)
+print(list1[::2])
+list2 = [num + 'a' for num in '1234']
+print(list2)
+print(list2.pop(1))
 
 
 # Tuple practice
@@ -59,16 +60,10 @@ print(len(new_tuple))
 # другу образуют одну пару, которую необходимо посчитать.
 # Входные данные - строка из чисел, разделенная пробелами.
 # Выходные данные - количество пар.
-# Важно: 1 1 1 - это 3 пары, 1 1 1 1 - это 6 пар
-list_ = [1, 2, 2, 2, 4, 5, 664]
-new_list = []
-pars = 0
-for i in list_:
-    if i in new_list:
-        pars += 1
-    if i not in new_list:
-        new_list.append(i)
-print(pars)
+# Важно: 1 1 1 - это 3 пары, 1 1 1 1 - это 6 пар 1 1 1 1 1
+str_ = "1 2 5 5 5 5 4 4"
+list_ = str_.split()
+print(sum(list_.count(num) - 1 for num in list_) // 2)
 
 
 # Уникальные элементы в списке
@@ -77,9 +72,6 @@ print(pars)
 # Элементы нужно выводить в том порядке,
 # в котором они встречаются в списке.
 x = ['s', 's', 'l', 'l', 'p', 1, 2]
-for i in x:
-    if x.count(i) == 1:
-        print(i)
 y = [i for i in x if x.count(i) == 1]
 print(y)
 
