@@ -22,5 +22,4 @@ def runner(*args):
                 print(functions[passed_arg]())
 
 
-
 runner("total_sum", 'fibonacci')
