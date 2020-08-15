@@ -8,8 +8,8 @@ runner(‘func’, ‘func1’...) - вызывает все переданны�
 from homework2 import alltasks
 from inspect import isfunction
 functions = {func: getattr(alltasks, func) for
-             func in dir(alltasks) if not func.startswith("__")
-             and isfunction(getattr(alltasks, func))}
+             func in dir(alltasks) if not func.startswith("__") and
+             isfunction(getattr(alltasks, func))}
 
 
 def runner(*args):
