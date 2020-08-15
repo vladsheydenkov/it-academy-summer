@@ -1,7 +1,7 @@
 import string
 
 
-def total_sum(m = 1, n = 2, s = 3):
+def total_sum(m=1, n=2, s=3):
     """Подсчет общей суммы покупок.
 
     :param m: рубли
@@ -15,7 +15,7 @@ def total_sum(m = 1, n = 2, s = 3):
     return str(cost // 100) + " rubles " + str(cost % 100) + " kopecks"
 
 
-def longest_word(str_ = "slklkgfsajl'"):
+def longest_word(str_="slklkgfsajl'"):
     """Поиск самого длинного слова в предложении.
 
     :param str_: входная строка
@@ -34,7 +34,7 @@ def longest_word(str_ = "slklkgfsajl'"):
     return longest_word
 
 
-def sub_string(str_ = "sdall//./.jnvsoc"):
+def sub_string(str_="sdall//./.jnvsoc"):
     """Конструирование подстроки.
 
     :param str_: входная строка
@@ -50,7 +50,7 @@ def sub_string(str_ = "sdall//./.jnvsoc"):
     return new_str_
 
 
-def count_letters(str_ = "s;lkfjv'oidioavi i ij ij pij p"):
+def count_letters(str_="s;lkfjv'oidioavi i ij ij pij p"):
     """Подсчет символов.
 
     :param str_: входная строка
@@ -69,7 +69,7 @@ def count_letters(str_ = "s;lkfjv'oidioavi i ij ij pij p"):
     return (low_number, up_number)  # write return value here
 
 
-def fibonacci(n = 10):
+def fibonacci(n=10):
     """Поиск числа фибоначчи.
 
     :param n: Номер числа Фибоначчи.
@@ -86,7 +86,7 @@ def fibonacci(n = 10):
     return fib2
 
 
-def palindrom(n = 102):
+def palindrom(n=102):
     """Поиск числа фибоначчи.
 
     :param n: Число.
