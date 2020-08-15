@@ -5,10 +5,10 @@ runner() – все фукнции вызываются по очереди
 runner(‘func_name’) – вызывается только функцию func_name.
 runner(‘func’, ‘func1’...) - вызывает все переданные функции
 """
-from inspect import isfunction
 from homework2 import alltasks
-functions = {func: getattr(alltasks, func) for func in dir(alltasks)
-             if not func.startswith("__")
+from inspect import isfunction
+functions = {func: getattr(alltasks, func) for
+             func in dir(alltasks) if not func.startswith("__")
              and isfunction(getattr(alltasks, func))}
 
 

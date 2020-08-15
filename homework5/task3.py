@@ -6,7 +6,6 @@
  get_ranges([4,7,10]) // "4,7,10"
  get_ranges([2, 3, 8, 9]) // "2-3,8-9"
 """
-from functools import reduce
 initial_list = [0, 1, 2, 3, 4, 7, 8, 10]
 
 
@@ -39,6 +38,7 @@ def get_ranges(list_):
                 another_list.clear()
         else:
             pars.append(num)
+    string_answer = ""
     for sublist in pars:
         if type(sublist) == list:
             string_answer += (sublist[0] + "-" + sublist[1] + ",")
